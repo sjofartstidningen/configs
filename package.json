@@ -1,0 +1,15 @@
+{
+  "name": "configs",
+  "version": "0.0.0",
+  "description": "Global configs for all Sjofartstidningen projects",
+  "repository": "git@github.com:sjofartstidningen/configs.git",
+  "author": "Adam Bergman <adam@fransvilhelm.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^2.2.0"
+  }
+}

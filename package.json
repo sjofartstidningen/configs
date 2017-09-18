@@ -8,7 +8,9 @@
   "private": true,
   "workspaces": ["packages/*"],
   "scripts": {
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "bootstrap": "lerna bootstrap",
+    "test": "lerna run test"
   },
   "devDependencies": {
     "eslint": "^4.7.0",

@@ -6,11 +6,7 @@ module.exports = {
     'eslint-config-prettier',
     'eslint-config-prettier/flowtype',
   ].map(require.resolve),
-  plugins: [
-    'import',
-    'flowtype',
-    'prettier',
-  ],
+  plugins: ['import', 'flowtype', 'prettier'],
   env: {
     commonjs: true,
     es6: true,

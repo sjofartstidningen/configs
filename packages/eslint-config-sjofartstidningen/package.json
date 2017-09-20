@@ -1,0 +1,41 @@
+{
+  "name": "eslint-config-sjofartstidningen",
+  "version": "0.1.0",
+  "description": "Eslint base config for Sjofartstidningen projects",
+  "repository": "git@github.com:sjofartstidningen/configs.git",
+  "author": "Adam Bergman <adam@fransvilhelm.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "sjofartstidningen"
+  ],
+  "scripts": {
+    "test": "ava '*.test.js'"
+  },
+  "peerDependencies": {
+    "babel-eslint": "^8.0.0",
+    "eslint": "^4.6.0",
+    "eslint-plugin-flowtype": "^2.35.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-prettier": "^2.2.0",
+    "prettier": "^1.7.0"
+  },
+  "dependencies": {
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-config-prettier": "^2.5.0"
+  },
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "babel-eslint": "^8.0.0",
+    "eslint": "^4.7.0",
+    "eslint-plugin-flowtype": "^2.35.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-prettier": "^2.2.0",
+    "prettier": "^1.7.0"
+  }
+}

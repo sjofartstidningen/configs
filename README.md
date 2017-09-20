@@ -1,2 +1,2 @@
 # configs
-Common configs for all Sjöfartstidningen projects
+Common configs for all Sjöfartstidningen projects.

@@ -8,16 +8,18 @@ module.exports = {
   ].map(require.resolve),
   plugins: ['import', 'flowtype', 'prettier'],
   env: {
+    browser: 'true',
+    node: true,
     commonjs: true,
     es6: true,
     serviceworker: true,
-    'shared-node-browser': true,
   },
   parserOptions: {
     ecmaVersion: 6,
     sourceType: 'module',
     allowImportExportEverywhere: false,
     ecmaFeatures: {
+      generators: true,
       experimentalObjectRestSpread: true,
     },
   },

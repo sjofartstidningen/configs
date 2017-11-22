@@ -12,23 +12,12 @@ const lint = text => {
   return linter.results[0];
 };
 
-const filterPrettierErrors = result => {
-  const messages = result.messages.filter(
-    m => m.ruleId !== 'prettier/prettier',
-  );
-  const diff = result.messages.length - messages.length;
-  return Object.assign({}, result, {
-    messages,
-    errorCount: result.errorCount - diff,
-  });
-};
-
 test('make sure it recognizes basic airbnb-configs', t => {
   const result = lint(`
     const hello = 'world';
   `);
 
-  t.truthy(filterPrettierErrors(result).errorCount > 0);
+  t.truthy(result.errorCount > 0);
 });
 
 test('make sure it recognizes invalid imports', t => {
@@ -37,7 +26,7 @@ test('make sure it recognizes invalid imports', t => {
     export default unknown;
   `);
 
-  t.truthy(filterPrettierErrors(result).errorCount > 0);
+  t.truthy(result.errorCount > 0);
 });
 
 test('make sure it recognizes prettier stuff', t => {
@@ -58,7 +47,19 @@ test('make sure it recognizes flow type', t => {
     isGreater(1, 2);
   `);
 
-  t.truthy(filterPrettierErrors(result).errorCount > 0);
+  t.truthy(result.errorCount > 0);
+});
+
+test('make sure it recognizes "fetch"', t => {
+  const result = lint(`
+    export default async url => {
+      const res = await fetch(url);
+      const json = await res.json();
+      return json;
+    };
+  `);
+
+  t.truthy(result.errorCount < 1);
 });
 
 test('make sure it recognizes "fetch"', t => {

@@ -6,7 +6,7 @@ module.exports = {
     'eslint-config-prettier',
     'eslint-config-prettier/flowtype',
   ].map(require.resolve),
-  plugins: ['import', 'flowtype', 'prettier'],
+  plugins: ['import', 'flowtype'],
   env: {
     browser: 'true',
     node: true,
@@ -25,12 +25,5 @@ module.exports = {
   },
   rules: {
     strict: 'off',
-    'prettier/prettier': [
-      'error',
-      {
-        singleQuote: true,
-        trailingComma: 'all',
-      },
-    ],
   },
 };

@@ -1,5 +1,7 @@
 # eslint-config-sjofartstidningen-react
 
+Base eslint config for Sjöfartstidnigen React projects.
+
 ## Installation
 
 ```shell

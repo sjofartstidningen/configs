@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sjofartstidningen",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Eslint base config for Sjofartstidningen projects",
   "repository": "git@github.com:sjofartstidningen/configs.git",
   "author": "Adam Bergman <adam@fransvilhelm.com>",

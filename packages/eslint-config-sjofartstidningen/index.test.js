@@ -61,17 +61,3 @@ test('make sure it recognizes "fetch"', t => {
 
   t.truthy(result.errorCount < 1);
 });
-
-test('make sure it recognizes "fetch"', t => {
-  const result = filterPrettierErrors(
-    lint(`
-    export default async url => {
-      const res = await fetch(url);
-      const json = await res.json();
-      return json;
-    };
-  `),
-  );
-
-  t.truthy(result.errorCount < 1);
-});

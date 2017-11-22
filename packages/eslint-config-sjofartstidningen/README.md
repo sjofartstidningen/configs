@@ -1,5 +1,7 @@
 # eslint-config-sjofartstidningen
 
+Base eslint config for Sjöfartstidnigen projects.
+
 ## Installation
 
 ```shell

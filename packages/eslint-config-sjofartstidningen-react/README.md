@@ -18,6 +18,8 @@ Base eslint config for Sjöfartstidnigen React projects.
 )
 ```
 
+This will install eslint-config-sjofartstidningen together with peer dependencies.
+
 ## Setup
 
 `.eslintrc`:

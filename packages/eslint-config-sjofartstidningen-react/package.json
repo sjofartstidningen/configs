@@ -1,13 +1,19 @@
 {
   "name": "eslint-config-sjofartstidningen-react",
-  "version": "0.2.5",
+  "version": "1.0.0",
   "description": "Eslint base config for Sjofartstidningen projects with react",
   "repository": "git@github.com:sjofartstidningen/configs.git",
   "author": "Adam Bergman <adam@fransvilhelm.com>",
   "license": "MIT",
   "main": "index.js",
-  "files": ["index.js"],
-  "keywords": ["eslint", "eslintconfig", "sjofartstidningen"],
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "sjofartstidningen"
+  ],
   "scripts": {
     "test": "ava '*.test.js'"
   },
@@ -16,7 +22,7 @@
   },
   "dependencies": {
     "eslint-config-airbnb": "^16.1.0",
-    "eslint-config-sjofartstidningen": "^0.2.1"
+    "eslint-config-sjofartstidningen": "^1.0.0"
   },
   "peerDependencies": {
     "babel-eslint": "^8.0.2",

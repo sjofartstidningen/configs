@@ -6,14 +6,8 @@
   "author": "Adam Bergman <adam@fransvilhelm.com>",
   "license": "MIT",
   "main": "index.js",
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "eslint",
-    "eslintconfig",
-    "sjofartstidningen"
-  ],
+  "files": ["index.js"],
+  "keywords": ["eslint", "eslintconfig", "sjofartstidningen"],
   "scripts": {
     "test": "ava '*.test.js'"
   },
@@ -22,6 +16,7 @@
   },
   "dependencies": {
     "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.8.0",
     "eslint-config-sjofartstidningen": "^1.0.2"
   },
   "peerDependencies": {

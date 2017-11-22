@@ -21,7 +21,8 @@
     "node": ">= 4"
   },
   "dependencies": {
-    "eslint-config-airbnb-base": "^12.1.0"
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.8.0"
   },
   "peerDependencies": {
     "babel-eslint": "^8.0.2",

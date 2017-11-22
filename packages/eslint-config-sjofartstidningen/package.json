@@ -1,13 +1,19 @@
 {
   "name": "eslint-config-sjofartstidningen",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Eslint base config for Sjofartstidningen projects",
   "repository": "git@github.com:sjofartstidningen/configs.git",
   "author": "Adam Bergman <adam@fransvilhelm.com>",
   "license": "MIT",
   "main": "index.js",
-  "files": ["index.js"],
-  "keywords": ["eslint", "eslintconfig", "sjofartstidningen"],
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "sjofartstidningen"
+  ],
   "scripts": {
     "test": "ava '*.test.js'"
   },
